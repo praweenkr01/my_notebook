@@ -24,7 +24,8 @@ float:left;
 	width:70%;
 	font-size:135%;
 }
-button{
+button{padding-top:1%;
+	padding-bottom:1%;
 	background-color:blue;
 	color:white;
 	padding-left:5%;
