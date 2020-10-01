@@ -1,6 +1,6 @@
  body{
-	margin-left:3%;
-	margin-right:3%;
+	margin-left:3.01%;
+	margin-right:3.002%;
 	background-color:rgba(0,0,0,0.3);
 	border:1px double white;
 }
@@ -129,12 +129,12 @@ margin-right:6%;
 	 text-align:center;
 	 padding-bottom:1%;
 	 padding-top:1%;
- background:linear-gradient(white 0%, rgba(0,0,0,0) 100%);}
+ background:linear-gradient(rgb(254,254,254) 0%, rgba(0,0,0,0) 100%);}
  h2{
  text-align:center;
  }
  #eml{
- font-size:90%;}
+ font-size:90.01%;}
  }
 
 
