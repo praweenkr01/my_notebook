@@ -21,7 +21,7 @@ display:block;
 	padding:1.01%;
 	line-height:1.7;
 	font-style:"Times New Roman";
-	background-color:rgba(255,255,255,0.4);
+	background-color:rgba(255, 255, 255, 0.87);
 	margin-left:4%;
 	display:inline-block;
 	width:92%;
@@ -33,8 +33,8 @@ button{
 	cursor:pointer;
 	padding-top:0.5%;
 	padding-bottom:0.5%;
-	background-color:#000066;
-	color:white;
+	background-color:#0d0dc0;
+	color:rgba(255, 255, 255, 0.932);
 	padding-left:5%;
 	padding-right:5%;
 }
@@ -94,7 +94,7 @@ float:left;
 	margin-left:4%;
 	display:inline-block;
 	width:70%;
-	font-size:135%;
+	font: size 140%;
 }
 button{
 	cursor:pointer;
