@@ -1,140 +1,130 @@
- body{
-	margin-left:3.01%;
-	margin-right:3.002%;
-	background-color:rgba(0,0,0,0.3);
-	border:1px double white;
-}
-img{
-	width:70%;
-	border-radius:50%;
-	
-}
-.left{
-	
-	text-align:center;
-	margin-left:3%;
-width:96%;
-display:block;
+* {
+	padding: 0;
+	margin: 0;
 }
 
-.right{
-	padding:1.01%;
-	line-height:1.7;
-	font-style:"Times New Roman";
-	background-color:rgba(255,255,255,0.4);
-	margin-left:4%;
-	display:inline-block;
-	width:92%;
-	font-size:135%;
-}
-.pad{
-padding:2%;}
-button{
-	cursor:pointer;
-	padding-top:0.5%;
-	padding-bottom:0.5%;
-	background-color:#000066;
-	color:white;
-	padding-left:5%;
-	padding-right:5%;
-}
-button:hover{
-background-color:blue;}
-footer{
-	padding-top:2%;
-	padding-bottom:2%;
-	display:block;
-	background-color:rgba(200,120,255,0.3);
-	margin-top:3%;
+.welcome {
+	text-align: center;
+	font-size: 30px;
+	padding: 5px 0px;
+	background-color: rgb(164, 66, 255);
+	color: white;
 }
 
-.dec a{
-	font-size:200%;
-	padding:1%;
-margin-left:12%;
-
- }
- #insta{
-	 margin-left:9%;
- }
- .dec a:hover{
-	 border-radius:10%;
- background:rgba(255,255,255,0.3);
- }
- h1{margin:0px;
-	 text-align:center;
-	 padding-bottom:1%;
-	 padding-top:1%;
- background:linear-gradient(white 0%, rgba(0,0,0,0) 100%);}
- h2{
- text-align:center;
- }
-@media only screen and (min-width:700px){
-body{
-	margin-left:3%;
-	margin-right:3%;
-	background-color:rgba(0,0,0,0.3);
-	border:1px double white;
-}
-img{
-	width:100%;
-	border-radius:50%;
-}
-.left{
-	margin-left:1%;
-width:20%;
-display:inline-block;
-float:left;
-}
-.right{
-	padding:1%;
-	line-height:1.7;
-	font-style:"Times New Roman";
-	background-color:rgba(255,255,255,0.4);
-	margin-left:4%;
-	display:inline-block;
-	width:70%;
-	font-size:135%;
-}
-button{
-	cursor:pointer;
-	padding-top:0.5%;
-	padding-bottom:0.5%;
-	background-color:#000066;
-	color:white;
-	padding-left:5%;
-	padding-right:5%;
-}
-button:hover{
-background-color:blue;}
-footer{
-	padding-top:2%;
-	padding-bottom:2%;
-	display:block;
-	background-color:rgba(200,120,255,0.3);
-	margin-top:3%;
+.two-div {
+	display: flex;
+	margin: auto;
 }
 
-.dec a{
-	font-size:200%;
-	padding:1%;
-margin-left:12%;
-margin-right:6%;
- }
- .dec a:hover{
-	 border-radius:10%;
- background:rgba(255,255,255,0.3);
- }
- h1{margin:0px;
-	 text-align:center;
-	 padding-bottom:1%;
-	 padding-top:1%;
- background:linear-gradient(rgb(254,254,254) 0%, rgba(0,0,0,0) 100%);}
- h2{
- text-align:center;
- }
- #eml{
- font-size:90.01%;}
- }
+.div-1 {
+	background-color: green;
+	color: white;
+	padding: 30px;
+	/* max-width: 400px; */
+}
 
+.my-profile img {
+	display: flex;
+	margin: auto;
+	border-radius: 10px;
+	height: 350px;
+	border: 2px solid white;
+}
 
+.myname {
+	text-align: center;
+	color: yellow;
+	padding-top: 10px;
+	font-size: 25px;
+}
+
+.description a {
+	color: rgb(137, 137, 248);
+}
+
+.heading h3 {
+	color: rgb(255, 232, 232);
+	margin-top: 10px;
+	px margin-bottom: 5px;
+	font-size: 25px;
+}
+
+.eduction a {
+	color: rgb(137, 137, 248);
+}
+
+.Stream a {
+	color: rgb(137, 137, 248);
+}
+
+/* second div */
+
+.div-2 {
+	background-color: rgb(11, 179, 11);
+	color: white;
+	padding: 30px;
+	width: 100%;
+}
+
+.heading-div h2 {
+	font-size: 30px;
+	color: yellow;
+}
+
+.btn {
+	font-size: 30px;
+	margin: 10px 0px;
+	padding: 8px;
+	cursor: pointer;
+	background-color: darkblue;
+	outline: none;
+	color: white;
+	border-radius: 10px;
+}
+
+.btn:hover {
+	background-color: blue;
+}
+
+footer {
+	background-color: rgb(164, 66, 255);
+	color: white;
+	padding: 5px 0px;
+	margin: auto;
+	display: flex;
+	width: 100%;
+}
+
+footer a {
+	margin: auto;
+	background-color: white;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+}
+
+footer a:hover {
+	background-color: yellow;
+}
+
+@media only screen and (max-width:742px) {
+	.two-div {
+		flex-direction: column;
+	}
+	.div-1 {
+		width: 100%;
+		padding: 0;
+		padding-bottom: 50px;
+		padding-top: 50px;
+	}
+	.div-2 {
+		padding: 0;
+		padding-top: 50px;
+	}
+	.two-div {
+		background-color: green;
+		padding: 10px;
+	}
+}
