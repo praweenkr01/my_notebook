@@ -1,8 +1,10 @@
  body{
-	margin-left:3.01%;
-	margin-right:3.002%;
-	background-color:rgba(0,0,0,0.3);
-	border:1px double white;
+margin:auto;
+ width:1024px;
+  padding:10px;
+ background-color:#ebebeb;
+ font-size:14px;
+ font-family:Verdana;
 }
 img{
 	width:70%;
@@ -30,13 +32,39 @@ display:block;
 .pad{
 padding:2%;}
 button{
-	cursor:pointer;
-	padding-top:0.5%;
-	padding-bottom:0.5%;
-	background-color:#000066;
-	color:white;
-	padding-left:5%;
-	padding-right:5%;
+cursor:pointer;
+padding-top:0.5%;
+padding-bottom:0.5%;
+	
+color:white;
+padding-left:5%;
+padding-right:5%;
+align-items: center;
+ background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
 }
 button:hover{
 background-color:blue;}
