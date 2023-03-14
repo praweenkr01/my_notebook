@@ -12,9 +12,10 @@ img{
 .left{
 	
 	text-align:center;
+	
 	margin-left:3%;
-width:96%;
-display:block;
+	width:96%;
+	display:block;
 }
 
 .right{
@@ -25,7 +26,7 @@ display:block;
 	margin-left:4%;
 	display:inline-block;
 	width:92%;
-	font-size:135%;
+	font-size:35vh;
 }
 .pad{
 padding:2%;}
