@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation section...________________________________________________________________________________________________
+______________________________________________________________________________________________________________________ */
+
+#navbar{    
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top:-40px;
+    padding-top: 40px;
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 2px 4px 4px rgb(4, 4, 4);
+    z-index: 4;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+
+}
+
+
+#navbar li:last-child {
+    margin-right: 0;
+  }
+  
+
+#navbar ul li{
+    position: relative;
+    margin: 20px 20px 0px 20px;
+    padding-bottom: 10px;
+    
+    /* padding: 30px 20px; */
+}
+#navbar ul li a{
+    
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+#navbar ul li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px; /* Adjust the position to create a white line below the nav element */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Set the height of the white line */
+    background-color: #fff; /* White color for the line */
+    transform: scaleX(0); /* Start with zero width to hide the line */
+    transform-origin: left; /* Set the origin to left so the line expands from the left */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+#navbar ul li a:hover::after {
+    transform: scaleX(1);
+    background: rgb(247, 159, 27);
+    /* Expand the line to full width on hover */
+}
+#navbar ul li a:hover{
+    color:rgb(247, 159, 27);
+}
+.linkedin-button {
+    display: inline-block;
+    background-image: linear-gradient(135deg, #faaf40, #f4b16f);
+    color: #3b1dc1;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    box-shadow: 0 2px 4px rgba(243, 88, 88, 0.7);
+    transition: box-shadow 0.3s, transform 0.3s, background-image 0.6s;
+}
+.linkedin-button:hover {
+    background-image: linear-gradient(135deg, #fba243, #f4ea2e);
+    box-shadow: 0 4px 8px rgba(237, 12, 12, 0.7);
+    transform: scale(1.05);
+}
+
+
+/* home section ___________________________________________________________________________________________________________
+___________________________________________________________________________________________________________________________ */
+#home{
+
+    width: 100%;
+    height: 650px;
+
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.profile{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.profile-image{
+    width: 30%;
+    display: flex;
+    justify-content: right;
+}
+
+.profile-image img{
+
+    border: 5px white solid;
+    padding: 16px;
+    width: 200px;
+    border-radius: 50%;
+
+
+}
+.profile-image img:hover{
+    border: 5px rgb(197, 185, 237) solid;
+    cursor: pointer;
+    background-color: rgba(80, 51, 51, 0.4)
+}
+.profile-intro{
+    padding-top: 40px;
+    text-shadow: 0 2px 5px rgb(230, 223, 126);
+    word-spacing: 10px;
+    line-height: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    width: 60%;
+}
+
+.home-contact{
+    margin-top: 30px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    text-align: center;
+}
+
+
+/* Experience section_________________________________________________________________________________________________________--
+________________________________________________________________________________________________________________________________ */
+
+#experience{
+
+    padding: 40px 12%;
+    background: rgba(239, 162, 69,0.7);
+    
+}
+
+.experience-title,.project-title{
+    padding:20px;
+    padding-left: 0px;
+}
+
+.experience-detail{
+    padding: 20px;
+    border: 1px solid rgba(239,162,50,0.5);
+    line-height: 23px;
+}
+
+.experience-detail ul ,.project-detail ul{
+    padding-left: 40px;
+}
+
+.experience-detail small,.project-detail small{
+
+    font-weight: bolder;
+    color: rgb(81, 81, 81);
+}
+
+.exp-hover:hover{
+
+    color: rgb(123, 104, 104);
+    text-shadow: 0px 2px 4px rgb(115, 112, 112);
+
+}
+
+/* project section_____________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________ */
+
+#projects,#skills,#contacts{
+
+    padding: 60px 12%;
+    /* background: rgba(239, 162, 69,0.7); */
+    
+}
+.project-space{
+    display: flex;
+}
+.project-detail{
+    line-height: 23px;
+    padding: 20px;
+    width: 50%;
+    border: 1px solid rgba(247, 159, 27,0.4);
+    transition: transform 0.3s;
+
+}
+
+.project-detail img{
+    width: 75%;
+}
+
+.project-detail ul li{
+    color: rgb(58, 57, 55);
+    /* color: red; */
+}
+
+.project-detail:hover{
+    line-height: 23px;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0px 2px 4px 4px rgba(247, 159, 27,0.2);
+}
+.project-detail:hover.project-detail h3{
+    letter-spacing: 1px;
+    text-decoration: underline;
+    color: #f5a722;
+}
+
+.project-detail-heading img{
+    padding-left: 30px;
+    width: 20%;
+
+}
+
+/* skills section ________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________ */
+
+.skill-detail{
+    display: flex;
+}
+.skill-detail-type{
+
+    width:30%;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+
+    background-color: rgba(211, 204, 204, 0.4);
+
+}
+.skill-detail-ele{
+
+    width:70%;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    text-align: left;
+    text-align: center;
+    background-color: rgba(211, 204, 204, 0.3);
+    background-color: rgba(247, 159, 27,0.18);
+
+}
+/* Academics section ___________________________________________________________________________________________________--_-___
+____________________________________________________________________________________________________________________________ */
+
+#academics{
+    margin-top: 20px;
+    width: 100%;
+    padding: 0px 12%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1; 
+
+}
+
+#academics::before,
+#academics::after {
+    padding:0px 12%;
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-color: rgba(150, 153, 235, 0.1); /* Set the background color for the random shapes */
+    mix-blend-mode: screen; /* Optional: Blend mode to control the blending of the shapes with the content */
+    z-index: -1; 
+}
+
+#academics::before {
+    clip-path: circle(13% at 50% 45%); /* Adjust the shape of the first pseudo-element */
+}
+
+#academics::after {
+    clip-path: circle(18% at 30% 45%); /* Adjust the shape of the second pseudo-element */
+}
+
+
+.edcuation{
+    display: flex;
+    padding-top: 40px;
+
+}
+
+.edcuation img{
+    width: 65px;
+    padding-right: 30px;
+}
+
+
+/* contact section __________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________________ */
+#contacts h2,#skills h2{
+    padding: 50px 0px;
+}
+
+
+.contacts-detail{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contacts-direct-mail{
+    width: 70%;
+}
+
+
+
+.textarea textarea{
+    resize: none;
+    padding: 10px;
+    width: 100%;
+    height: 140px;
+    box-sizing: border-box;
+}
+.input{
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.input-ele{
+    width:47%;
+}
+
+
+.input input,.subject input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.subject {
+
+    margin-top: 20px;
+
+}
+
+form button{
+    margin-top: 20px;
+    padding: 15px 40px;
+    background: white;
+    color: rgb(247, 159, 27);
+    border: 1px solid rgb(247, 159, 27);
+}
+
+form button:hover{
+    margin-top: 20px;
+    padding: 15px 40px;
+    background: rgb(247, 159, 27);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(247, 159, 27);
+}
+
+
+.contacts-written{
+    width: 30%;
+    /* border: 2px solid red; */
+
+}
+
+.contact-email{
+    padding: 20px;
+    /* border: 3px solid blue; */
+    padding-left: 15%;
+
+}
+
+.contact-email h4{
+    color: rgba(0, 0, 0, 0.6)
+}
+.anchor{
+
+    text-decoration: none;
+    color: rgb(252, 196, 112);
+    font-weight: bolder;
+    display: block;
+    letter-spacing: 1px;
+    
+    transition:  0.2s ease-in;
+}
+
+.anchor:hover{
+    transform: scale(1.1);
+    text-shadow: 6px 6px 12px #f5a722;
+    color: #ffa201;
+}
+
+
+/* scroll to top button ______________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________ */
+
+#scrollToTopBtn {
+    display: none; /* Hide the button by default */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(247, 159, 27);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+#scrollToTopBtn.show {
+    display: block; /* Show the button when it has the "show" class */
+  }
+
+#scrollToTopBtn:hover{
+    background: rgb(216, 130, 0);
+}
+
+/* footer section______________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________ */
+
+footer {
+	padding: 0px 12%;
+	display: block;
+    background-color: rgba(1, 1, 1, 0.9);
+    padding-top: 25px;
+    color: white;
+}
+
+
+.footer-content,.footer-copy-nav{
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thanking{
+    color: rgb(247, 159, 27);;
+    padding: 5px 0px;
+}
+.quote{
+    color:rgb(255, 255, 255);
+    padding: 5px 0px;
+}
+
+.social-media{
+    padding: 5px 0px;
+    display: flex;
+    
+}
+  
+.social-media-ele a{
+    border-radius: 2px;
+    padding: 5px 7px;
+    color: rgb(246, 174, 66);
+	font-size: 200%;
+    background: rgba(246, 174, 66,0.2);
+
+}
+
+.social-media-ele{
+    transition: transform 0.5s ease;
+    margin-right: 2%;
+
+}
+.social-media-ele:hover{
+    transform: scaleX(-1);
+}
+.social-media-ele a:hover{
+    background: rgba(249, 165, 41,0.2);
+    color: rgb(247, 159, 27);
+}
+
+.footer-copy-nav{
+    margin-left: 10px;
+    padding:3% 0px;
+}
+
+.footer-nav h4 a{
+
+    color: white;
+    text-decoration: none;
+
+}
+
+.footer-nav h4 :hover{
+    color:rgb(247, 159, 27);
+}
+
+.fill-button{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(247, 159, 27);
+    font-weight: bolder;
+    border: 1px solid rgb(247, 159, 27);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    /* transition: transform 0.3s; */
+    /* transition: background-color 0.3s; */
+    z-index: 1;
+}
+
+.fill-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(247, 159, 27);
+    transition: left 0.3s;
+    z-index: -1;
+    animation: fillAnimation 0.6s ease-in-out;
+
+}
+
+
+.fill-button:hover::before {
+    left: 0;
+}
+.fill-button:hover{
+    color: white;
+}
+
+
+
+ 
+.fill-button:hover::before {
+    animation: fillAnimation 0.6s ease-in, bounceAnimation 0.6s 0.0s ease-in-out forwards;
+  }
+  
+  @keyframes fillAnimation {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+  
+  @keyframes bounceAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-20px);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+.footer-developer{
+
+    color: rgb(247, 159, 27);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+

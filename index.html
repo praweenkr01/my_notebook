@@ -1,60 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>personal website</title>
-    <link href="css/index.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 
 </head>
-
 <body>
-    <h1>Welcome..!</h1>
-    <aside class="left"><img src="images and files/praveen.jpg" alt=" " />
-        <h2>Praveen Kumar</h2>
-        <hr>
-        <h3>Description : </h3>
-        <p>Hi...<br> hello Myself Praveen Kumar. I'm a Third year undergraduate in electronics and communication engineering (ECE) at <a href="" https://www.smvdu.ac.in/ "> Shri Mata Vaishno Devi University</a>
-            I would be completing my graduation in June 2023. I have understanding of python, Data Structure & Algorithm, Data Science ,basic Machine learning, Basic of web design, and IoTs .
-            <br><br></p>
-            <hr>
-        <h3>Graduation : </h3>
+
+
+    <!-- Navigation bar  -->
+    <nav id="navbar">
+
+        <div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+    
+            </ul>
+        </div>
+        <a class=" fa fa-linkedin linkedin-button" href="https://www.linkedin.com/in/praveen-kumar-1163101b0/" target="_blank">&ensp;LinkedIn</a>
+
+    </nav>     
+    
+    
+    <!-- content of the page ......................................................................................-->
+    <div class="content">
+
+
+        <!-- Home Section..
+        the front inital look on openting .................................................................................-->
+
+        <div id="home">
+
+            <div class="profile">
+
+                <div class="profile-image">
+
+                    <img src="images/profile-pic.png" alt="">
+
+                </div>
+
+                <div class="profile-intro">
+
+                    <h1>MY Name Is Praveen Kumar.</h1>
+                    <h1>Software Developer</h1>
+
+                    <h3>Digital Specialist Engineer .. at Tata Elsxi</h3>
+                    
+
+                </div>
+
+            </div>
+
+            <div class="home-contact">
+
+                <div class="home-contact-purpose">
+                    <h2>Hire Me</h2>
+                    <a href="images/resume.pdf" download="" class="fill-button"> Download Resume</a>
+                </div>
+
+                <div class="home-contact-phone">
+                    <h2>Phone no.</h2>
+                    <a href="tel:+919682313605" class="anchor"><h2>+91-9682 313 605</h2></a>
+                    
+                </div>
+
+                <div class="home-contact-mail">
+                    <h2>Email Id.</h2>
+                    <a href="mailto:kpraween10@gmail.com" class="anchor"><h3>kpraween10@gmail.com</h3></a>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Experience section....................................................................................... -->
+
+        <div id="experience">
+
+            <div class="experience-title">
+                <h2>EXPERIENCE</h2>
+            </div>
+            
+
+            <div class="experience-detail">
+                <a href="https://drive.google.com/file/d/1zX7FEAjFkHOnSHPKWdNsMmJrjHABm2HT/view" target="_blank" style="text-decoration: none;">
+                <div style="display: flex;" class="exp-hover">
+                    <img src="images/azure.png" alt="azure-logo" width="45px" height="45px"> &ensp;
+                    <div><h3>AZURE SKYNET SOLTIONS PVT.LTD <small>| Machine Learning and Neural Network Intern</small></h3>
+                    <small>Jun 2022 – July 2022 | virtual, India</small></div>
+                </div>
+                </a>
+                <ul>
+                    <li>worked on few mini project like digitrecognizer and some other classification project similarto 
+                        dog vs cat and other.</li>
+                    <li>This helped me in enhancing my skills and gave the feeling ofreal working environment at industry level.</li>
+                    <li>Right now, those mini project are being used by Cosmic Skills in their online
+                        course program.</li>
+
+                </ul>
+            </div>
+
+            <div class="experience-detail">
+                <a href="https://drive.google.com/file/d/1g30yo-66BtmTUyQisUQmbVEDzU2JQEBw/view?usp=drive_link"  style="text-decoration: none;" target="_blank">
+                <div style="display: flex;" class="exp-hover">
+                    <img src="images/career360.png" alt="career360-logo" width="45px" height="45px">&ensp;
+                    <div><h3>CAREER 360 <small>| Campus Infopreneur</small></h3>
+                    <small>Jul 2020 – Dec 2020 | virtual, India</small></div>
+                </div>
+                </a>
+                <ul>
+                    <li>Helped Fresher students in their counselling process and selection of best
+                        possible college based on theirinterest and knowledge.</li>
+                    <li>This program helped in enhancing leadership,networking and communication
+                        skills</li>
+
+                </ul>
+            </div>
+
+        </div>
+
         
-         <a href="https://www.smvdu.ac.in/ " style="display:block; "><strong> Shri Mata Vaishno Devi University, katra</strong></a>
-        <h3>Stream : </h3>
-        <br>Pursuing Btech in electronics and communication engineering(2019-2023)</br>
-        </br> <a href="mailto:kpraween10@gmail.com " style="display:block; "><b id="eml ">&#9993;kpraween10@gmail.com</b></a>
-        <b>&#128241;+91-9534454201</b></br>
-        </br>
-        <h3>Skills : </h3>
-        <b> Python,C++,Basic C programming, Web design,  Data structure & Algorithm ,  IoTs, Data Science,basics of machine learning</b></hr>
-        </ul>
-    </aside>
-        <hr>
-    <aside class="right ">
-        <div class="pad ">
-		<h3>Internship Experience</h3><br>
-		<div><ul><li>
-		<b>Inforprenurs at Career360</b><br>I have been providing information and sharing all the experience about the journey that had been followed by me all in the counsiling process, selection of college, reporting at college  and also involving with one one and finding solution of sonthing that's done by mistake
-		this journey gives me the proficiency in speaking and writing skill and also develop my interaction and presentation skills.
-		</li><br>
-		<li><b>Campus ambassador</b><br>
-		As a Campus ambassador in <b>International MUN</b> I have learned the basic advertisement and social media's role in promoting something </li><br></div>
-        <h3>Volunteer Experience</h3><br>
-		<ul><li>Moot Court(threater)</li>
-        <li>Robo Soccer(tech fest)</li></ul>
-        <hr>
-		You can download my report on traditional practices that should be continued without any interruption. <br><br>
-		<a href="images and files/practice.docx" download> <button type="button " class="btn btn-indigo btn-lg " > Download </button></a></div>
-</aside>
-<footer class="dec ">
-	<a href="https://www.instagram.com/praweenkr01/ " id="insta "><i class="fa fa-instagram " aria-hidden="true "></i></a>
-	<a href="https://www.linkedin.com/in/praveen-kumar-1163101b0/ "><i class="fa fa-linkedin " aria-hidden="true "></i></a>
-	<a href="https://www.facebook.com/profile.php?id=100005258089091 "><i class="fa fa-facebook " aria-hidden="true "></i></a>
-	<a href="https://github.com/kpraween10 "><i class="fa fa-github " aria-hidden="true "></i></a>
-</footer>
-	</body>
+        <!-- projects section......................................................................................... -->
+        <div id="projects">
+
+            <div class="project-title">
+                <h2>PROJECTS</h2>
+            </div>
+            
+            <div class="project-space">
+
+                
+                <div class="project-detail">
+                    <a href="https://praweenkr01-fraction-and-vector-calculator-app-o93ikf.streamlit.app/" target="_blank" style="text-decoration: none;">
+                    <img src="images/fraction.png" alt="">
+                    <h3>FRACTION AND VECTOR CALCULATOR</h3>
+                    <small>|Python |Oops| DSA | Streamlit || August 2022</small>
+                    <ul>
+                        <li>Designed two DataType Fraction and Vector. Added functionality.</li>
+                        <li>Fraction?..much precise calculation results than decimalrepresentation.</li>
+                        <li>Added operations like GCD,LCM,MAX.etc in select box to use directly.</li>
+                        <li>Performing Vector calculation will be easy just by selecting the
+                            operations from select box and providing positional components of
+                            vectors one can get the result.</li>
+                    </ul>
+                    </a>
+                </div>
+                
+
+                
+                <div class="project-detail">
+                    <a href="https://praweenkr01.github.io/Advance--Dustbin/" target="_blank" style="text-decoration: none;">
+                    <div class="project-detail-heading">
+                        <img src="images/dustbin.png" width="30%" alt="">
+                    </div>
+                    
+                    <h3>ADVANCE DUSTBIN</h3>
+                    <small>| IoTs, C, Arduino IDE | Hardware Project</small>
+                    <ul>
+                        <li>Open lid of bin on sensing someone came to throw the waste into it,and
+                            will automatically shut the lid when done,Red and Green LED on dustbin
+                            to indicate , dustbin is full or not.</li>
+                        <li>ULTRASONIC SENSOR is used to detect if garbage is nearthe bin, on
+                            detection SERVO MOTOR is used to pull the bin’s lid to open it.</li>
+                    </ul>
+                    </a>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+        <!-- Skill section .....................................................................................................-->
+        <div id="skills">
+
+            <div class="experience-title">
+                <h2>SKILLS</h2>
+            </div>
+
+            <div class="skill-detail">
+
+                <div class="skill-detail-type">Languages:</div>
+                <div class="skill-detail-ele">Python, Cpp,  JavaScript </div>
+                
+            </div>
+            <div class="skill-detail">
+
+                <div class="skill-detail-type">Frameworks/Tools:</div>
+                <div class="skill-detail-ele">Git, GitHub, Django, Streamlit, Bootstrap,Pandas , NumPy,Matplotlib,Data Science</div>
+
+            </div>
+            <div class="skill-detail">
+
+                <div class="skill-detail-type">Databases: </div>
+                <div class="skill-detail-ele">MySQL, MongoDB </div>
+
+            </div>
+            <div class="skill-detail">
+
+                <div class="skill-detail-type">Computer-Fundatmental:</div>
+                <div class="skill-detail-ele">Advance Algorithm,Data Struture,DBMS,OS,Computer Network </div>
+
+            </div>
+            <div class="skill-detail">
+
+                <div class="skill-detail-type">Skills:</div>
+                <div class="skill-detail-ele">Software Design, Testing, Research, Computer Vision,Problem Solving</div>
+
+            </div>
+            <div class="skill-detail">
+
+                <div class="skill-detail-type">Communication-Language:</div>
+                <div class="skill-detail-ele">English,Hindi,Spanish(Basic) </div>
+
+            </div>
+            <div class="skill-detail">
+
+                <div class="skill-detail-type">Other-skills:</div>
+                <div class="skill-detail-ele">Video-editing(Hitfilm-express),Leadership</div>
+
+            </div>
+
+        </div>
+
+        <!-- academics section........................................................................... -->
+        <div id="academics">
+
+            <h2>Academic And Achievements</h2>
+            <div class="academic-container">
+
+                <div class="edcuation">
+                    <img src="images/smvdu-logo.png" alt="smvdu-logo">
+
+                    <div class="education-detail">
+                        <h3>SHRI MATA VAISHNO DEVI UNIVERSITY,KATRA</h3>
+                        <p>Bachelor of Technology (Electronics & Communication Engg)</p>
+                        <small>CGPA: 7.88/10</small>&ensp;&ensp;<small>Session: 2019-23</small>
+                    </div>
+                </div>
+                <div class="edcuation">
+                    <img src="images/school.png" alt="school-logo">
+            
+                    <div class="education-detail">
+                        <h3>RAJYA SAMPOSHIT SR SEC. SCHOOL ALAULI KHAGARIA</h3>
+                        <p>Senior Secondary School (PCM, English,Hindi)</p>
+                        <small>Percentage: 76.8%</small>&ensp;&ensp;<small>Session: 2016-18</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- contacts section.......................................................................................... -->
+        <div id="contacts">
+            <h2>GET IN TOUCH</h2>
+
+            <div class="contacts-detail">
+
+                
+                <div class="contacts-direct-mail">
+
+                    <form
+                        action="https://formspree.io/f/mbjvlvol"
+                        method="POST">
+                        
+                        <div class="textarea">
+                            <textarea name="message" placeholder="Your Message Here.."></textarea>
+                        </div>
+
+
+                        <div class="input">
+                            <div class="input-ele">
+             
+                                <input type="" name="name" placeholder="Your Name Here..">
+                            
+                            </div>
+
+                            <div class="input-ele">
+                       
+                                <input type="email" name="email" placeholder="YourEmail@gmail.com">
+                         
+                            </div>
+
+                        </div>
+
+                        <div class="subject">
+                            <input type="text" name="subject" placeholder="Enter Subject..">
+
+                        </div>
+
+
+
+
+                        <button type="submit">Send</button>
+                    </form>
+
+                </div>
+
+                <div class="contacts-written">
+
+                    <div class="contact-email">
+                        <a href="mailto:kpraween10@gmail.com" class="anchor" >&#9993;&emsp;kpraween10@gmail.com</a>
+                        <h4>&emsp;&emsp;Send your query anytime!</h4>
+                     
+                    </div>
+
+                    <div class="contact-email">
+
+                        <a href="tel:+919682313605" class="anchor">&#128241;&emsp;+91-9682313605</br></a>
+                        <h4>&emsp;&emsp;Prefer texting ,urgent only</h4>
+
+                    </div>
+                    <div class="contact-email">
+
+                        <a href="https://goo.gl/maps/C7eohuqNoNHcwE1F7" class="fa fa-home anchor">&emsp;Bihar ,India </br></a>
+                        <h4>&emsp;&emsp;Khagaria, 851205</h4>
+
+                    </div>
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d302.66968151836863!2d86.48087129044022!3d25.51516844156668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDMwJzU1LjEiTiA4NsKwMjgnNTIuMyJF!5e0!3m2!1sen!2sin!4v1690461119055!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- corner botton to go to top................................................................................. -->
+
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+
+
+    <!-- footer section................................................................................................. -->
+    <footer class="footer">
+
+        <div class="footer-content">
+            <div class="footer-content-left">
+
+                <div class="thanking">
+
+                    <h1>Thankyou..</h1>
+        
+                </div>
+        
+                <div class="quote">
+        
+                    I hope you are doing great have a Nice day sir
+        
+                </div>
+        
+                <div class="social-media">
+
+                    <div class="social-media-ele">
+                        <a href="https://www.instagram.com/praweenkr01/ "target="_blank"><i class="fa fa-instagram " aria-hidden="true "></i></a>
+                    
+                    </div>
+                    <div class="social-media-ele">
+                        <a href="https://www.linkedin.com/in/praveen-kumar-1163101b0/ "target="_blank"><i class="fa fa-linkedin " aria-hidden="true "></i></a>
+
+                    </div>
+                    <div class="social-media-ele">
+                        <a href="https://www.facebook.com/profile.php?id=100005258089091 "target="_blank"><i class="fa fa-facebook " aria-hidden="true "></i></a>
+
+                    </div>
+                    <div class="social-media-ele">
+                        <a href="https://github.com/kpraween10 "target="_blank"><i class="fa fa-github " aria-hidden="true "></i></a>
+
+                    </div>
+        
+                </div>
+
+            </div>
+
+            <div class="footer-content-right">
+                
+
+                <a href="images/resume.pdf" download="" class="fill-button"> Download Resume</a>
+                <!-- <a href="images/resume.pdf" download=""><button class="resume-button" download>Second </button></a> -->
+
+            </div>
+
+        </div>
+
+        <div class="footer-copy-nav">
+
+            <div class="copyright">Copyright &copy;2023 All rights reserved | This personal portfolio is made with  by <a href="#home" class="footer-developer">Praveen</a></div>
+            <div class="footer-nav">
+
+                <h4>
+                    <a href="#home">Home</a> |
+                    <a href="#home">Experience</a> |
+                    <a href="#home">Projects</a> |
+                    <a href="#home">Skills</a> |
+                    <a href="#contacts">Contacts</a>
+
+                </h4>
+
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
