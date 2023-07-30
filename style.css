@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* navigation section...________________________________________________________________________________________________
 ______________________________________________________________________________________________________________________ */
@@ -107,26 +112,31 @@ ________________________________________________________________________________
 
 }
 
+
+
 .profile-image{
     width: 30%;
     display: flex;
     justify-content: right;
 }
 
-.profile-image img{
 
+.profile-image img{
     border: 5px white solid;
     padding: 16px;
     width: 200px;
     border-radius: 50%;
-
-
 }
+
+
+
 .profile-image img:hover{
     border: 5px rgb(197, 185, 237) solid;
     cursor: pointer;
     background-color: rgba(80, 51, 51, 0.4)
 }
+
+
 .profile-intro{
     padding-top: 40px;
     text-shadow: 0 2px 5px rgb(230, 223, 126);
@@ -137,6 +147,7 @@ ________________________________________________________________________________
     width: 60%;
 }
 
+
 .home-contact{
     margin-top: 30px;
     padding: 40px 0;
@@ -145,6 +156,7 @@ ________________________________________________________________________________
     color: white;
     text-align: center;
 }
+
 
 
 /* Experience section_________________________________________________________________________________________________________--
@@ -197,6 +209,7 @@ ________________________________________________________________________________
 .project-space{
     display: flex;
 }
+
 .project-detail{
     line-height: 23px;
     padding: 20px;
@@ -205,6 +218,7 @@ ________________________________________________________________________________
     transition: transform 0.3s;
 
 }
+
 
 .project-detail img{
     width: 75%;
@@ -216,9 +230,9 @@ ________________________________________________________________________________
 }
 
 .project-detail:hover{
-    line-height: 23px;
-    padding: 20px;
-    width: 50%;
+    /* line-height: 23px; */
+    /* padding: 20px; */
+    /* width: 50%; */
     box-shadow: 0px 2px 4px 4px rgba(247, 159, 27,0.2);
 }
 .project-detail:hover.project-detail h3{
@@ -236,6 +250,7 @@ ________________________________________________________________________________
 /* skills section ________________________________________________________________________________________________________________
 __________________________________________________________________________________________________________________________________ */
 
+
 .skill-detail{
     display: flex;
 }
@@ -251,6 +266,7 @@ ________________________________________________________________________________
     background-color: rgba(211, 204, 204, 0.4);
 
 }
+
 .skill-detail-ele{
 
     width:70%;
@@ -327,7 +343,6 @@ ________________________________________________________________________________
 .contacts-direct-mail{
     width: 70%;
 }
-
 
 
 .textarea textarea{
@@ -431,6 +446,7 @@ ________________________________________________________________________________
     border-radius: 4px;
   }
   
+
 #scrollToTopBtn.show {
     display: block; /* Show the button when it has the "show" class */
   }
@@ -451,11 +467,13 @@ footer {
 }
 
 
+
 .footer-content,.footer-copy-nav{
     padding-top: 2%;
     display: flex;
     justify-content: space-between;
 }
+
 
 .thanking{
     color: rgb(247, 159, 27);;
@@ -467,10 +485,12 @@ footer {
 }
 
 .social-media{
+    
     padding: 5px 0px;
     display: flex;
     
 }
+
   
 .social-media-ele a{
     border-radius: 2px;
@@ -499,6 +519,7 @@ footer {
     padding:3% 0px;
 }
 
+
 .footer-nav h4 a{
 
     color: white;
@@ -524,6 +545,7 @@ footer {
     /* transition: background-color 0.3s; */
     z-index: 1;
 }
+
 
 .fill-button::before {
     content: "";
@@ -592,3 +614,199 @@ footer {
 }
 
 
+/* responsive */
+
+#toggleButton {
+    display: none;
+    background-color: rgba(221, 221, 221, 0.5); /* Translucent background color */
+    border: none;
+    padding: 10px 0; /* Full-width padding */
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2000; /* Ensure the button stays on top of content and the navbar */
+}
+
+.hamburger-button:before {
+    content: '\2630'; /* Hamburger icon: ☰ */
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+.cross-button:before {
+    content: '\2715'; /* Cross icon: ✕ */
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+
+
+
+
+@media screen and (max-width: 840px) {
+    #navbar{
+        top:0px;
+    }
+
+    #navList {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 40px;
+      left: 0; /* Set left to 0 to take the full width of the screen */
+      right: 0; /* Set right to 0 to take the full width of the screen */
+      background-color:rgba(0, 0, 0, 0.79);
+      padding: 10px;
+      z-index: 1500; /* Ensure the collapsed navList stays on top of content */
+    }
+    #navList ul{
+        display: block;
+        padding-top: 30px;
+    }
+    #navList ul li{
+        text-align: center;
+        padding: 5px;
+        cursor: pointer;
+        letter-spacing: 2px;
+    }
+
+    #navList ul li:hover{
+        background-color: rgba(236, 140, 21, 0.4);
+        letter-spacing: 3px;
+    }
+    
+    .linkedin-button{
+        display: none;
+        z-index: 2500;
+    }
+    #toggleButton {
+        display: block;
+
+    }
+
+    /* home ====================================================================================================================================================*/
+    .profile{
+        padding-top: 10px;
+        display: block;
+    }
+    .profile-image{
+        /* border: 1px red solid ; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .profile-image img{
+        width: 150px;
+    }
+    .profile-intro{
+        width: 100%;
+        /* border: 1px solid red; */
+        padding-top: 20px;
+        text-align: center;
+        transform: scale(0.9);
+    }
+    .home-contact{
+        /* border: 1px solid red; */
+        margin-top: 0px;
+        display: block;
+        color: white;
+        text-align: center;
+        /* align-items: center; */
+    
+    }
+    .home-contact div{
+        padding-top: 10px;
+    }
+
+    /* experience ==========================================================================================================================================*/
+
+    #experience{
+        padding-left:9%;
+        padding-right: 8%;;
+    }
+
+
+    /* projects ============================================================================================================================================*/
+    .project-space{
+        /* border: 1px solid red; */
+        display: block;
+    }
+    .project-detail{
+        width: 100%;
+        /* border: 1px solid red; */
+    
+    }
+
+    /* skills================================================================================================================================================ */
+    #skills{
+        /* border: 1px solid red; */
+        padding: 0px 0px 0px 0px;
+        transform: scale(0.9);
+    }
+    .skill-detail-type{
+        width:31%;
+        font-size:large;
+    
+    }
+    /* academics ================================================================================================================================================*/
+
+    #academics{
+        padding-left: 9%;
+        padding-right: 8%;
+    }
+    .edcuation img{
+        height: 60px;
+    }
+
+    /* contacts=============================================================================================================================================== */
+    #contacts{
+        padding-left: 9%;
+        padding-right: 8%;
+
+    }
+    .contacts-detail{
+        display: block;
+        /* border:1px solid red; */
+    }
+    
+    .contacts-direct-mail{
+        width: 100%;
+    }
+    .contacts-written{
+        width: 100%;
+        padding-top: 20px;
+        /* border: 2px solid red; */
+    
+    }
+
+
+    /* footer======================================================================================================================= */
+    footer {
+        padding-left: 9%;
+        padding-right: 8%;
+    }
+    .fill-button{
+        text-align: center;
+        padding: 8px 15px;
+        font-weight:lighter;
+    }
+    .footer-copy-nav{
+        display: block;
+        margin-top: 20px;
+        margin-left: 0px;
+        padding:0px 0px;
+        padding-bottom: 15px;
+    }
+    #scrollToTopBtn {
+        bottom: 73px;
+        padding: 7px 12px;
+      }
+      
+
+}
