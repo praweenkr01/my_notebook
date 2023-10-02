@@ -147,14 +147,8 @@ ________________________________________________________________________________
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: white;
     width: 60%;
-    transition: color 0.3s ease;
+    
 }
-.profile-intro:hover {
-    cursor: pointer;
-    color: rgba(239, 162, 69,0.7); /* Change the text color on hover to your desired color */
-}
-
-
 
 .home-contact{
     margin-top: 30px;
