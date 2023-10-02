@@ -1,4 +1,4 @@
-## my personal website (portfolio)
+## My Personal Website #portfolio
 
-# hey, help me to complete my readme.md....!!
-make pull request after cpmplition and i'll defenitly merge that
+### Hey, Help me to complete my README.md   !!
+Make pull request after cpmplition and i'll defenitly merge that.
