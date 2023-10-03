@@ -137,6 +137,7 @@ ________________________________________________________________________________
 }
 
 
+
 .profile-intro{
     padding-top: 40px;
     text-shadow: 0 2px 5px rgb(230, 223, 126);
@@ -145,8 +146,8 @@ ________________________________________________________________________________
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: white;
     width: 60%;
+    
 }
-
 
 .home-contact{
     margin-top: 30px;
