@@ -1,4 +1,4 @@
-// Get the button element
+// Get the button element.
 const scrollToTopButton = document.getElementById("scrollToTopBtn");
 
 // Function to show or hide the button based on scroll position
@@ -10,7 +10,7 @@ function toggleScrollToTopButton() {
   }
 }
 
-// Function to scroll to the top of the page when button is clicked
+// Function to scroll to the top of the page when button is clicked.
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -18,7 +18,7 @@ function scrollToTop() {
   });
 }
 
-// Event listener to check scroll position and show/hide the button accordingly
+// Event listener to check scroll position and show/hide the button accordingly.
 window.addEventListener("scroll", toggleScrollToTopButton);
 
 
@@ -56,7 +56,7 @@ if (viewportWidth<=840){
   });
 
 
-  // li click respond to anchor click
+  // li click respond to anchor click.
   const navItems = document.querySelectorAll('.nav-item');
 
   function activateAnchor(event) {
@@ -65,7 +65,7 @@ if (viewportWidth<=840){
       anchor.click();
 
       linkedin.style.display='none';
-      navList.style.display = 'none'; // Close the navigation list when a link is clicked
+      navList.style.display = 'none'; // Close the navigation list when a link is clicked.
       toggleButton.classList.remove('cross-button');
       toggleButton.classList.add('hamburger-button');
       
