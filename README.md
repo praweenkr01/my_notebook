@@ -1,4 +1,2 @@
-## My Personal Website #portfolio
-
-### Hey, Help me to complete my README.md   !!
-Make pull request after cpmplition and i'll defenitly merge that.
+## My basic portfolio website. #portfolio
+LINK: https://praweenkr01.github.io/me/
