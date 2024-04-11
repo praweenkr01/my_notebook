@@ -1,0 +1,144 @@
+git --version   //gives the version of the git installed.
+
+git config --global user.name "Your Name"       //set the name .
+git config --global user.email "Your email"     //set the email.
+
+
+
+
+mkdir folderName        //make one directory
+cd folderName           //change the directory to folderName
+
+
+git init    //initilize the git in current directory.
+ls -la      //gives all the repository like .git.
+ls -l .git  //git history and time stamp for changes.
+clear       //clear the terminal
+
+
+
+
+code filename       //to jump to filename if available
+                    //else make new file [filename] and jump to that
+notepad filename    //this can also be used
+
+
+git status          //check the current status of the repo
+
+git add filename    //to add the untracked or modified thing to staged area
+git add --all       //adding all to staged area
+
+git clean -f -d         //delete the untracked file from repository
+git restore filename    //discard the change in filename(tracked file)
+
+git restore --staged filename  //discard the modification/adding of filename in staged area
+git restore filename           //finally discard modification from file.
+
+
+
+
+git commit      /*save changes made-
+                    [step1:press i(insert)]
+                    [step2: give the heading]
+                    [step3:double Enter ,write description]
+                    [step4: press esc]
+                    [step5: write :wq & press Enter]
+                */
+git commit -m "Your message"    //shorhand for commit
+git commit -a                   //staged the changes in tracked file and commit
+git commit -a -m "message"      //staged the changes in tracked file and commit
+
+git log         //shows history of commit with message,date (press q :to exit)
+git log -p      //shows log in patch [All the modification and addition to file is shown]
+git reflog      //all commit (not much detail just id ,heading)
+git reflog -4   //show last 4 commit
+
+
+git log --oneline
+git log --graph
+git log --graph --oneline   //show clearly how branched merged and all
+
+
+git branch                  //see all the branches
+git branch branchName       //new branch formed named branchName
+git checkout branchName     //switch to branchName
+git checkout master         //switch back to master
+git merge branchName        //merge the branchName to master
+git branch -d branchName    //delete the branch branchName
+git branch -D branchName    //delete the branch even if not merged..
+
+git merge master    //inside the branch to uptodate with master.
+
+git checkout -b branchName      //create branchName and switch to it.
+git merge --abort               //to abort the merge (when merge conflict occur)
+
+
+git help --all      //to get the all command
+git command -help   //to get idea about particular command
+
+
+git diff            //to show the difference from last commit(not staged)
+git diff --staged   //to show the diff from last commit(staged)
+
+git mv curr_fileName new_fileName   //rename the file(commit req after this)
+git commit -m "file name changed"
+
+
+git rm fileName         //delete the fileName(commit reqired)
+git commit -m "deleted"
+
+echo "sometext">fileName    //create the file (contain :"sometext")
+echo .DS_STORE > .gitignore     //create .gitignore,contains file or filename pattern to ignore
+
+git checkout fileName   //undo the change made in file(unstaged)
+git reset HEAD testfile //undo the chnage made in file(staged)
+
+git commit --amend      //to ammend the commit made previously(change message)
+git revert HEAD         //to revert the last commit(this itself is a commit)
+git revert commitID     //to revert a particular commit.
+
+=============================Github=====================================================
+//copy the URL of the reository
+
+git clone <url> //local copy of remote repo
+                //sets up the this remote repo with default origin name
+
+git remote -v               //configuration of remote
+git remote show origin      //to show info
+git branch -r               //git repo currently tracking
+
+
+//To Make changes inthe remote repo :
+        pull the remote branch
+        merge it with local branch
+        push it back to origin
+
+git fetch
+git log origin/master
+git status
+git merge 
+
+
+git fetch + git merge =git pull
+git remote update   //get the content of all different branch
+git checkout        //see the working tree
+
+git push        //to make final change in remote repo
+git push -f     //force push(not recommended)
+
+
+
+//===================================================================================
+
+______working on a branch ________
+
+git checkout -b branchName      //make all the necessary change in this one
+                                //directly push from branch so it can be verified
+
+git push -u origin branchName           //new branch branchName created in remote repo
+git push --delete origin branchName     //delete
+
+
+_______rebase to resolve split history ,make easy to debug_________________
+
+git rebase master
