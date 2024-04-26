@@ -82,3 +82,25 @@ m2.update_price(13000)
 print(m2.price)#13000
 
 
+mm2=m2 #same object is being referenced by two var(m2,mm2)
+        #reference variable hold the object.
+        #An Object can have multiple reference variable
+        #assiginiing a new reference var to an existing obj does not create a new obj
+
+
+'''
+#Priniting reference variable
+since it's object it will display the hex representation of it.
+ '''
+print(mm2)
+
+
+
+'''SUMMARY'''
+#oops is a style of programming which allow us to club data and behaviour together
+#clubing data:more suited for coding the real world scenerio
+#object are real world entity
+
+
+
+
