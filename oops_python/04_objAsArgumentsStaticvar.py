@@ -73,10 +73,3 @@ mob.get_price() #14500
 Mobile.get_margin() #200
 Mobile.set_margin(250) #set the margin to 250
 Mobile.get_margin()
-
-
-    
-    
-
-
-
