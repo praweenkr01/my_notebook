@@ -46,8 +46,8 @@ void main(){
 
 
     float nm=3;
-    // scanf("%f",&nm);//if input with decimal generate some garbage
-                    //if no decimal generate 0(for lower print statement)
+    // scanf("%f",&nm);//if input with decimal :generate some garbage
+                    //if no decimal :generate 0(for lower print statement)
     printf("float printed as int:%d\n",nm);//undesired result
 
 
